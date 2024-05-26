@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Style for the select dropdown */
+#filter-products {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fb774b;
+    color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title h1{
+    color: coral;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+.title h2{
+    color: coral;
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.filter-btns{
+    text-align: center;
+}
+
+.filter-btn{
+    background: none;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    color: coral;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-btn::after{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(50%);
+    height: 2pxx;
+    width: 0;
+    transition: all 0.2s ease-in-out;
+}
+/* .filter-btn:hover{
+    color: #555;
+} */
+.filter-btn:hover::after{
+    width: 100%;
+}
+
+/* Pagination */
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0px 12px;
+}
+
+.pagination-item_link{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.pagination-item_icon{
+    color: #939393;
+}
+.pagination-item_icon:hover{
+    color: #939393;
+}
+
+.pagination-item--active .pagination-item_link{
+    background-color: coral;
+    color: #fff;
+}
+.pagination-item--active .pagination-item_link:hover{
+    background-color: #ed5c3f;
+}
